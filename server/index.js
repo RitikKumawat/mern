@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-
+const path = require("path");
 
 const userRoutes = require("./routes/User");
 const profileRoutes = require("./routes/Profile");
@@ -31,6 +31,7 @@ app.use(
         }
     )
 )
+app.use(express.static(path.join(__dirname,"../client/build")));
 app.use(
     fileUpload({
         useTempFiles:true,
@@ -47,7 +48,9 @@ app.use("/api/v1/payment",paymentRoutes);
 app.use("/api/v1/contact",contactRoutes);
 
 //default route 
-app.get("/",(req,res)=>{
+app.get("*",(req,res)=>{
+    res.sendFile(path.join(__dirname,"../client/build/index.html"))
+    
     return res.json({
         success:true,
         message:"Your server is up and running...."
