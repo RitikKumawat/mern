@@ -25,7 +25,7 @@ app.use(cookieParser());
 app.use(
     cors(
         {
-            origin:"",
+            origin:"https://mern-frontend-coral.vercel.app/",
             methods:["POST","GET"],
             credentials:true,
         }
