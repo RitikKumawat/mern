@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import { IconBtn } from '../../Common/IconBtn';
 import { createRating } from '../../../services/operations/courseDetailsAPI';
 import { RatingStars } from '../../Common/RatingStars';
-import ReactStars from "react-rating-stars-component";
+// import ReactStars from "react-rating-stars-component";
 import { RxCross2 } from 'react-icons/rx';
 export const CourseReviewModal = ({setReviewModal}) => {
   
@@ -66,12 +66,12 @@ export const CourseReviewModal = ({setReviewModal}) => {
             onSubmit={handleSubmit(onSubmit)}
             className='mt-6 flex flex-col items-center'>
 
-              <ReactStars
+              {/* <ReactStars
                 count={5}
                 onChange={ratingChanged}
                 size={24}
                 activeColor = "#ffd700"
-              />
+              /> */}
 
               <div className="flex w-11/12 flex-col space-y-2">
                 <label htmlFor='courseExperience'  className="text-sm text-richblack-5">

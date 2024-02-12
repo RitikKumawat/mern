@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import StarRatingComponent from 'react-star-rating-component';
+// import StarRatingComponent from 'react-star-rating-component';
 import {GiNinjaStar} from "react-icons/gi"
 import {RiDeleteBin6Line} from "react-icons/ri"
 import { removeFromCart } from '../../../../slices/cartSlice';
@@ -28,13 +28,13 @@ export const RenderCartCourses = () => {
                             <p className='text-sm text-richblack-300'>{courses?.category?.name}</p>
                             <div className='flex items-center gap-2'>
                                 <span className='text-yellow-5'>4.4</span>
-                                <StarRatingComponent
+                                {/* <StarRatingComponent
                                     starCount={5}
                                     editing={false}
                                     starColor="#ffd700"
                                     renderStarIconHalf={<GiNinjaStar/>}
                                     renderStarIcon={<GiNinjaStar/>}
-                                />
+                                /> */}
                                 <span className='text-richblack-400'>{courses?.ratingAndReviews?.length} Ratings</span>
                             </div>
                         </div>
