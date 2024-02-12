@@ -22,7 +22,15 @@ database.connect();
 app.use(express.json());
 app.use(cookieParser());
 
-
+app.use(
+    cors(
+        {
+            origin:"https://deploy-mern.vercel.com",
+            methods:["POST","GET"],
+            credentials:true,
+        }
+    )
+)
 app.use(
     fileUpload({
         useTempFiles:true,
@@ -46,9 +54,9 @@ app.get("/",(req,res)=>{
     })
 })
 
-if(process.env.NODE_ENV==="production"){
-    app.use(express.static("client/build"));
-}
+// if(process.env.NODE_ENV==="production"){
+//     app.use(express.static("client/build"));
+// }
 
 app.listen(PORT,()=>{
     console.log(`App is running at PORT ${PORT}`);
