@@ -5,7 +5,7 @@ import "swiper/css/free-mode"
 import "swiper/css/pagination"
 import { Autoplay,FreeMode,Navigation,Pagination } from 'swiper'
 
-import ReactStars from "react-rating-stars-component"
+// import ReactStars from "react-rating-stars-component"
 import { apiconnector } from '../../services/apiconnector'
 import { ratingsEndpoints } from '../../services/apis'
 import { FaStar } from 'react-icons/fa6'
@@ -64,7 +64,7 @@ export const ReviewSlider = () => {
                             }
                         </p>
                         <p>{review?.rating.toFixed(1)}</p>
-                        <ReactStars
+                        {/* <ReactStars
                             count={5}
                             value={review.rating}
                             size={20}
@@ -72,7 +72,7 @@ export const ReviewSlider = () => {
                             activeColor="#ffd700"
                             emptyIcon={<FaStar/>}
                             fullIcon={<FaStar/>}
-                        />
+                        /> */}
                         </div>
                         </div>
                         </div>
