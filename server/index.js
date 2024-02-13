@@ -21,15 +21,12 @@ database.connect();
 
 app.use(express.json());
 app.use(cookieParser());
-
+var corsOptions = {
+    origin:"*",
+    optionsSuccessStatus:200,
+}
 app.use(
-    cors(
-        {
-            origin:["https://mern-frontend-coral.vercel.app"],
-            methods:["POST","GET"],
-            credentials:true,
-        }
-    )
+    cors(corsOptions)
 )
 app.use(express.static(path.join(__dirname,"../client/build")));
 app.use(
