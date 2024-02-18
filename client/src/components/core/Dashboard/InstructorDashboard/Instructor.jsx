@@ -44,7 +44,7 @@ export const Instructor = () => {
         {loading ? (<div className='spinner'></div>):
         courses.length>0
         ?(<div>
-            <div className="my-4 flex h-[450px] space-x-4">
+            <div className="my-4 md:flex-row flex flex-col   md:space-x-4 space-y-2">
                 {totalAmount >0 || totalStudents >0 ? (<InstructorChart courses={instructorData}/>):
                 (
                     <div className="flex-1 rounded-md bg-richblack-800 p-6">
@@ -79,14 +79,14 @@ export const Instructor = () => {
                         <p className="text-xs font-semibold text-yellow-50">View All</p>
                     </Link>
                 </div>
-                <div className="my-4 flex items-start space-x-6">
+                <div className="my-4 md:flex-row flex flex-col items-start md:space-x-6 space-y-5">
                     {
                         courses.slice(0,3).map((course)=>(
                             <div key={course._id} className='w-1/3'>
                                 <img
                                     src={course.thumbnail}
                                     alt={course.courseName}
-                                    className='h-[201px] w-full rounded-md object-cover'
+                                    className='md:h-[201px] w-full rounded-md object-cover'
                                 />
                                 <div className="mt-3 w-full">
                                     <p className="text-sm font-medium text-richblack-50">{course.courseName}</p>

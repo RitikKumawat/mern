@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div>
         {/* Section 1 */}
-        <div className=' relative z-10 mx-auto flex flex-col w-11/12 max-w-maxContent items-center text-white justify-between'>
+        <div className=' relative  z-10 mx-auto flex flex-col w-11/12 max-w-maxContent items-center text-white justify-between'>
             <Link to={"/signup"}>
                 <div className='  group mt-16 p-1 mx-auto rounded-full bg-richblack-800 font-bold text-richblack-200
                  transition-all duration-200 hover:scale-95 w-fit'>
@@ -54,7 +54,7 @@ const Home = () => {
             
 
             
-                <div>
+                <div className='p-1'>
                     <CodeBlocks
                         position={"lg:flex-row flex-col "}
                         heading={

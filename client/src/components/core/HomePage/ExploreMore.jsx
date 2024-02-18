@@ -29,7 +29,7 @@ export const ExploreMore = () => {
     <div>
         <div>
 
-            <div className='text-4xl font-semibold text-center my-10 '>
+            <div className='text-4xl font-semibold text-center my-10 p-7'>
                 Unlock the 
                 <HighlightText text={"Power of Code"}/> 
 

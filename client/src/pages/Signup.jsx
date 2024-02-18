@@ -10,7 +10,7 @@ function Signup() {
     <div>
 
     
-    <div className='flex w-11/12 justify-between max-w-[1160px] py-12 mx-auto gap-x-12 gap-y-0 '>
+    <div className='flex mt-8 w-11/12 justify-between max-w-[1160px] py-12 mx-auto gap-x-12 gap-y-0 '>
         <div className='w-11/12 max-w-[450px]'>
             <h1 className='text-white font-semibold text-[1.875rem] leading-[2.375rem]'>
             Join the millions learning to code with StudyNotion for free</h1>
@@ -33,7 +33,7 @@ function Signup() {
                 <p>Sign Up with Google</p>
             </button>
         </div>
-        <div className='relative w-11/12 max-w-[400px] '>
+        <div className='relative  w-11/12 max-w-[400px]  '>
             <img src={frameImg} alt='img-frame' width={500} height={504}
                 loading='lazy'
             />

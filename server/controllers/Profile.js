@@ -16,8 +16,8 @@ exports.updateProfile = async (req,res) =>{
         //find profile
         const userDetails = await User.findById({_id:id});
         const profile = await Profile.findOne(userDetails?.additionalDetails._id);
-        console.log("Printing user Details/////////",userDetails.additionalDetails);
-        console.log("Printing Additional Details/////////",profile);
+        // console.log("Printing user Details/////////",userDetails.additionalDetails);
+        // console.log("Printing Additional Details/////////",profile);
         const user = await User.findByIdAndUpdate(id,{firstName, lastName, });
         // console.log(user.additionalDetails);
         await user.save()
@@ -32,7 +32,7 @@ exports.updateProfile = async (req,res) =>{
 
         const updatedUserDetails = await User.findById(id).populate("additionalDetails").exec()
 
-        return res.status(300).json({
+        return res.status(200).json({
             success:true,
             message:"Profile updated successfully",
             updatedUserDetails,

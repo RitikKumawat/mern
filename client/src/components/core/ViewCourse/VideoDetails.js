@@ -138,7 +138,7 @@ export const VideoDetails = () => {
 
   
   return (
-    <div className="flex flex-col gap-5 text-white">
+    <div className="flex flex-col gap-5 text-white mt-[80px]">
         {
           !videoData ?(<div>
             No Data Found

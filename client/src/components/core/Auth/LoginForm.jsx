@@ -35,7 +35,7 @@ function LoginForm() {
     return (
     <div>
          <div 
-        className='flex bg-richblack-800 p-1 gap-x-1 my-6 rounded-full max-w-max '>
+        className='flex bg-richblack-800 p-1 gap-x-1 my-6 rounded-full max-w-max'>
             <button onClick={()=> setAccountType("student")}
             className={`${accountType === "student"?
             " bg-richblack-900 text-richblack-5"

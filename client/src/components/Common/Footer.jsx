@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 
 export const Footer = () => {
   return (
-            <div className='flex flex-col space-y-9 h-[45rem] w-[100vw] bg-richblack-800  '>
+            <div className='flex flex-col space-y-9 h-max w-[100vw] bg-richblack-800  '>
             <div className='flex mx-auto w-11/12 max-w-maxContent mt-10'>
                 {/* left part */}
                 <div className='flex flex-col items-baseline md:flex-row space-x-6 w-[45%] '>
@@ -112,7 +112,7 @@ export const Footer = () => {
             </div>
             
             {/* copyright section and policy section */}
-            <div className='flex mx-auto w-11/12 max-w-maxContent justify-between '>
+            <div className='flex mx-auto w-11/12 max-w-maxContent justify-between gap-2 '>
                 <div className='flex w-[70%] items-center space-x-2'>
 
                 
@@ -125,7 +125,8 @@ export const Footer = () => {
                 </div>
 
                 <div>
-                    <p className='text-richblack-300'>Made with ♥ By Ritik Kumawat</p>
+                    <p className='text-richblack-300'>Made with ♥ </p>
+                    <p className='text-richblack-300'>By Ritik Kumawat</p>
                 </div>
             </div>
         </div>

@@ -45,7 +45,7 @@ export const InstructorChart = ({courses}) => {
     };
   
     return (
-    <div className="flex flex-1 flex-col gap-y-4 rounded-md bg-richblack-800 p-6">
+    <div className="flex flex-1 flex-col gap-y-4 rounded-md bg-richblack-800 p-6 ">
         <p className="text-lg font-bold text-richblack-5">Visualise</p>
         <div className="space-x-4 font-semibold">
             <button
@@ -67,7 +67,7 @@ export const InstructorChart = ({courses}) => {
                 Income
             </button>
         </div>
-        <div className="relative mx-auto aspect-square h-full w-full">
+        <div className="relative mx-auto aspect-square  ">
             <Pie
                 data={currChart === "students"? chartDataForStudents : chartDataForIncome}
                 options={options}

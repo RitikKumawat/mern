@@ -54,11 +54,11 @@ const {
         console.log("UPDATE_PROFILE_API API RESPONSE............", response)
   
         
-        const userImage = response.data.updatedUserDetails.image
-          ? response.data.updatedUserDetails.image
-          : `https://api.dicebear.com/5.x/initials/svg?seed=${response.data.updatedUserDetails.firstName} ${response.data.updatedUserDetails.lastName}`
+        // const userImage = response.data.updatedUserDetails.image
+        //   ? response.data.updatedUserDetails.image
+        //   : `https://api.dicebear.com/5.x/initials/svg?seed=${response.data.updatedUserDetails.firstName} ${response.data.updatedUserDetails.lastName}`
         dispatch(
-          setUser({ ...response.data.updatedUserDetails, image: userImage })
+          setUser({ ...response.data.updatedUserDetails})
         )
         if (response.data.success===true) {
           

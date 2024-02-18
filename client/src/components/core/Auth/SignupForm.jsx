@@ -87,7 +87,7 @@ function SignUpForm() {
         <Tab tabData={tabData} field={accountType} setField={setAccountType} />
         <form onSubmit={handleOnSubmit} >
             {/* firstname and lastname */}
-            <div className='w-full flex gap-x-4 mt-[20px]'>
+            <div className='w-full md:flex gap-x-4 mt-[20px]'>
 
                 <label className='w-full '>
                     <p className='text-[0.875rem] text-richblack-100 mb-1 leading-[1.375rem]'>
@@ -140,7 +140,7 @@ function SignUpForm() {
             
 
             {/* createPassword and Confirm Password  */}
-            <div className='w-full flex gap-x-4 mt-[20px]'>
+            <div className='w-full md:flex gap-x-4   mt-[20px]'>
             <label className='relative w-full'>
                     <p className='text-[0.875rem] text-richblack-100 mb-1 leading-[1.375rem]'>
                         Create Password<sup  className=' text-pink-500'>*</sup></p>
@@ -175,7 +175,7 @@ function SignUpForm() {
                         className=' bg-richblack-800 text-richblack-200 rounded-[0.5rem]  w-full p-[12px]'
 
                     />
-                    <span className='absolute right-3 top-[38px] cursor-pointer'
+                    <span className='absolute right-3 md:top-[40px] top-[69px] cursor-pointer'
                      onClick={()=>{
                         setConfirmPassword((prev)=>!prev)
                          }}>
