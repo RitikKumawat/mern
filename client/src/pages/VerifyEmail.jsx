@@ -83,7 +83,7 @@ export const VerifyEmail = () => {
                             <p className="text-richblack-5 flex items-center gap-x-2"> Back to Login</p>
                             </Link>
                         </div>
-                        <button className='className="flex items-center text-blue-100 gap-x-2"'
+                        <button className="flex items-center text-blue-100 gap-x-2"
                          onClick={ () => dispatch(sendOtp(signupData.email,navigate))}>
                             <RxCountdownTimer/>
                             Resend it
