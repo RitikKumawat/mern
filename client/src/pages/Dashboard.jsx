@@ -6,6 +6,7 @@ import { logout } from '../services/operations/authAPI';
 import { ConfirmationModal } from '../components/Common/ConfirmationModal';
 import { SideBarLink1 } from '../components/core/Dashboard/SideBarLink1';
 import { VscSignOut } from 'react-icons/vsc';
+import { sidebarLinks } from '../data/dashboard-links';
 
 
 
