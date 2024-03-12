@@ -19,11 +19,11 @@ export const ReviewSlider = () => {
         const fetchAllReviews = async()=>{
             const {data} = await apiconnector("GET",ratingsEndpoints.REVIEWS_DETAILS_API)
             // console.log("Response get reviews....",response);
-            console.log("DATA>...",data);
+            // console.log("DATA>...",data);
             if(data?.success){
                 setReviews(data?.data);
             }
-            console.log("Printing Reviews",reviews);
+            // console.log("Printing Reviews",reviews);
         }
         fetchAllReviews();
     },[]);

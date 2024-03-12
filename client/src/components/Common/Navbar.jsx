@@ -69,7 +69,7 @@ export const Navbar = () => {
         setLoading(true);
         try {
             const result = await apiconnector("GET",categories.CATEGORIES_API)
-            console.log("Printing sublinks result: ",result);
+            // console.log("Printing sublinks result: ",result);
             setSubLinks(result.data.data);
         } catch (error) {
             console.log("Could not fetch category list")
