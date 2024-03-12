@@ -1,5 +1,5 @@
 // process.config("dotenv")
-const BASE_URL= "https://server-studynotion-eh0qg81up-ritikkumawat.vercel.app/api/v1"
+const BASE_URL= "https://server-studynotion-delta.vercel.app/api/v1"
 
 // AUTH ENDPOINTS
 export const endpoints = {
