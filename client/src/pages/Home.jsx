@@ -13,7 +13,11 @@ import { InstructorSection } from '../components/core/HomePage/InstructorSection
 import { ExploreMore } from '../components/core/HomePage/ExploreMore'
 import { ReviewSlider } from '../components/Common/ReviewSlider'
 const Home = () => {
-  return (
+    
+    const handlePrint = ()=>{
+        window.print();
+    }
+    return (
     <div>
         {/* Section 1 */}
         <div className=' relative  z-10 mx-auto flex flex-col w-11/12 max-w-maxContent items-center text-white justify-between'>
@@ -184,7 +188,12 @@ const Home = () => {
                 {/* Review Slider */}
                 <ReviewSlider/>
         </div>
-        
+        <div onClick={()=>handlePrint()}>
+
+       <CTAButton>
+                Print 
+       </CTAButton>
+        </div>
         
         {/* Footer */}
         <div className="w-full bg-[#161D29] py-14">
