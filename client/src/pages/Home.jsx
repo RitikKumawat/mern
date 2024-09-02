@@ -12,6 +12,9 @@ import { LearningLanguageSection } from '../components/core/HomePage/LearningLan
 import { InstructorSection } from '../components/core/HomePage/InstructorSection'
 import { ExploreMore } from '../components/core/HomePage/ExploreMore'
 import { ReviewSlider } from '../components/Common/ReviewSlider'
+const handlePrint=()=>{
+    window.print();
+}
 const Home = () => {
   return (
     <div>
@@ -184,7 +187,9 @@ const Home = () => {
                 {/* Review Slider */}
                 <ReviewSlider/>
         </div>
-        
+        <button onClick={()=>handlePrint()}>
+            Print
+        </button>
         
         {/* Footer */}
         <div className="w-full bg-[#161D29] py-14">

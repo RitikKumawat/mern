@@ -28,8 +28,8 @@ export const CourseCardDetails = ({course,setConfirmationModal, handleBuyCourse}
         setConfirmationModal({
             text1:"you are not logged in",
             text2:"please login to add to cart",
-            btn1text:"Login",
-            btn2text:"Cancel",
+            btn1Text:"Login",
+            btn2Text:"Cancel",
             btn1Handler:()=>navigate("/login"),
             btn2Handler:()=>setConfirmationModal(null),
         })
